@@ -1,6 +1,43 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# DiagramFlow
 
-## Getting Started
+DiagramFlow is a **Next.js** application that lets you create, edit, and style flowcharts directly in the browser. Built on **React Flow**, it allows you to add and resize various node shapes (rectangle, ellipse, diamond, text-only, etc.), connect them with edges, and customize their colors and text. You can also toggle between light and dark modes, and download your flowchart as a PNG or SVG.
+
+---
+
+## Features
+
+1. **Multiple Node Shapes**  
+   - Rectangle, ellipse, diamond, parallelogram (flowData), text-only (flowText), etc.  
+   - Custom styling for each shape, including skew transforms, clip-paths, shadows, and more.
+
+2. **Multi-line Text Editing**  
+   - Type directly in nodes, with text wrapping or overflowing (similar to Lucidchart).
+
+3. **Edge Context Menus**  
+   - Right-click edges to adjust arrow direction, stroke width, color, dotted line styles, and more.
+
+4. **Light/Dark Mode**  
+   - Toggle a button to switch between light and dark themes throughout the application.
+
+5. **Download as Image**  
+   - Export your flowchart as a PNG or SVG using [html-to-image](https://github.com/bubkoo/html-to-image).
+
+6. **Resizable Sidebar**  
+   - Drag to resize the left-hand sidebar, which contains buttons for creating new nodes.
+
+---
+
+## Tech Stack
+
+- **Next.js** – A React framework for building fast, server-rendered applications.  
+- **React Flow** – A powerful library for building node-based UIs and flowcharts in React.  
+- **Tailwind CSS** (optional, depending on your styling) – Utility-first CSS framework.  
+- **html-to-image** – Used for exporting the flowchart as PNG or SVG images.
+
+---
+
+## Getting Started Locally
 
 First, run the development server:
 
@@ -32,6 +69,16 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+# Deployment
+
+## Deploy on Render
+1. Push your code to GitHub.
+2. Log in to Render, create a new Web Service, and select your repository.
+3. Configure:
+    - Build Command: npm install && npm run build
+    - Start Command: npm start (assuming your package.json has "start": "next start")
+4. Render will build and deploy your project, giving you a live URL.
 
 ## Deploy on Vercel
 
